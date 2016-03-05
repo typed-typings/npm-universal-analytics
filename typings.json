@@ -1,0 +1,9 @@
+{
+  "name": "universal-analytics",
+  "version": "^0.3.10",
+  "main": "index.d.ts",
+  "homepage": "https://github.com/peaksandpies/universal-analytics",
+  "ambientDevDependencies": {
+    "node": "github:DefinitelyTyped/DefinitelyTyped/node/node.d.ts#48c1e3c1d6baefa4f1a126f188c27c4fefd36bff"
+  }
+}
