@@ -2,12 +2,12 @@ declare function ua (tid: string, cid?: string, options?: ua.Options): ua.Visito
 
 declare namespace ua {
   export interface Options {
-    strictCidFormat: boolean;
-    https: boolean;
+    strictCidFormat?: boolean;
+    https?: boolean;
   }
 
   export interface MiddlewareOptions {
-    cookieName: string;
+    cookieName?: string;
   }
 
   export function middleware (tid: string, options: MiddlewareOptions): (req: any, res: any, next: (err: Error) => any) => void;
