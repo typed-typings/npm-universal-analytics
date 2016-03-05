@@ -18,10 +18,10 @@ declare namespace ua {
 
   export class Visitor {
     constructor (tid: string, cid?: string, options?: Options);
-    debug (debug: boolean): this;
+    debug (debug?: boolean): this;
     reset (): this;
 
-    send (callback: Callback): void;
+    send (callback?: Callback): void;
 
     pageview (path: string, callback?: Callback): this;
     pageview (params: Object, callback?: Callback): this;
