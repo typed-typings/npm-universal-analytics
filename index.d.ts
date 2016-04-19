@@ -4,6 +4,11 @@ declare namespace ua {
   export interface Options {
     strictCidFormat?: boolean;
     https?: boolean;
+    requestOptions: RequestOptions;
+  }
+
+  export interface RequestOptions {
+    headers?: any;
   }
 
   export interface MiddlewareOptions {
@@ -18,6 +23,12 @@ declare namespace ua {
 
   export class Visitor {
     constructor (tid: string, cid?: string, options?: Options);
+
+    cid: string;
+    tid: string;
+    options: Options;
+    requestOptions: RequestOptions;
+
     debug (debug?: boolean): this;
     reset (): this;
 
