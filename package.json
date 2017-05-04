@@ -4,9 +4,9 @@
     "test": "typings bundle . -o bundle.d.ts && ts-node test.ts"
   },
   "devDependencies": {
-    "ts-node": "^0.5.5",
-    "typescript": "^1.8.2",
-    "typings": "^0.6.8",
-    "universal-analytics": "^0.3.10"
+    "ts-node": "^3.0.3",
+    "typescript": "^2.3.2",
+    "typings": "^2.1.1",
+    "universal-analytics": "^0.4.13"
   }
 }
